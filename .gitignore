@@ -109,3 +109,4 @@ dist/
 .idea/modules.xml
 .idea/vue-admin.iml
 
+/.idea/
