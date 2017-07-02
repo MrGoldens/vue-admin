@@ -17,6 +17,13 @@
       <li><a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a></li>
       <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
     </ul>
+    <b-form-select v-model="selected"
+                   :options="options"
+                   calss="mb-3"
+    ></b-form-select>
+
+    <div>Selected: <strong>{{selected}}</strong></div>
+
   </div>
 </template>
 
@@ -25,7 +32,27 @@ export default {
   name: 'hello',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'Welcome to Your Vue.js App',
+      selected: null,
+      options: [
+        {
+          text: 'Please select some item',
+          value: null
+        },
+        {
+          text: 'This is First option',
+          value: 'a'
+        }, {
+          text: 'Default Selected Option',
+          value: 'b'
+        }, {
+          text: 'This is another option',
+          value: 'c'
+        }, {
+          text: 'This one is disabled',
+          value: 'd',
+          disabled: true
+        }]
     }
   }
 }

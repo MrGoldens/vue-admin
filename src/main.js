@@ -9,14 +9,12 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 import 'vue-awesome/icons/flag'
 import 'vue-awesome/icons'
 import Icon from 'vue-awesome/components/Icon'
-
 Vue.config.productionTip = false
-
+Vue.use(BootstrapVue)
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
   router,
-  BootstrapVue,
   template: '<App/>',
   components: { App }
 })
