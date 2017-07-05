@@ -1,6 +1,8 @@
 <template>
-  <div id="app" class="body-bg">
-    <main>
+  <div id="app">
+    <div class="body-bg"></div>
+    <main class="menu-collapsed">
+      <pageTop></pageTop>
       <div class="al-main">
         <div class="al-content">
           <router-view></router-view>
@@ -11,7 +13,11 @@
 </template>
 
 <script>
-export default {
-  name: 'app'
-}
+  import pageTop from './components/layout/pageTop/pageTop.vue'
+  export default {
+    name: 'app',
+    components: {
+      pageTop
+    }
+  }
 </script>

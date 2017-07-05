@@ -12,6 +12,7 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 import 'vue-awesome/icons/flag'
 import 'vue-awesome/icons'
 import './sass/main.scss'
+import 'ionicons/dist/css/ionicons.css'
 
 Vue.config.productionTip = false
 Vue.use(BootstrapVue)
