@@ -13,7 +13,7 @@
 </template>
 
 <script>
-  import pageTop from './components/layout/pageTop/pageTop.vue'
+  import pageTop from './components/layout/'
   export default {
     name: 'app',
     components: {

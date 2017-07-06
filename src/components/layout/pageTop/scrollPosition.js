@@ -4,7 +4,6 @@
 export default {
   name: 'scroll-position',
   bind (el, binding, vnode, oldVnode) {
-    console.log(binding)
-    console.log('123')
+
   }
 }
