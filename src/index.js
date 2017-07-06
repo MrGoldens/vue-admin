@@ -7,26 +7,17 @@ import BootstrapVue from 'bootstrap-vue'
 import Icon from 'vue-awesome/components/Icon'
 import Vuex from 'vuex'
 import VueResource from 'vue-resource'
-
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import 'vue-awesome/icons/flag'
 import 'vue-awesome/icons'
 import './sass/main.scss'
 import 'ionicons/scss/ionicons.scss'
-import $ from 'jquery'
 Vue.config.productionTip = false
 Vue.use(BootstrapVue)
 Vue.use(Vuex)
 Vue.use(VueResource)
 Vue.component('icon', Icon)
-Vue.directive('scrollPosition', {
-  bind: function () {
-    console.log('123')
-    console.log($(window))
-  },
-  props: ['maxHeight']
-})
 
 /* eslint-disable no-new */
 new Vue({
