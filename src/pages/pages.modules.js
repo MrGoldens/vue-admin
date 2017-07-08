@@ -5,13 +5,13 @@ import lazyLoading from './lazyLoading'
 const routeConfig = {
   item: [
     {
-      name: 'Dashboard',
-      path: '/dashboard',
+      name: 'Dashboard2',
+      path: '/dashboard2',
       sidebarMeta: {
         icon: 'ion-android-home',
         order: 0
       },
-      component: lazyLoading('dashboard', true)
+      component: lazyLoading('dashboard2', true)
     }
   ]
 }
