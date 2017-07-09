@@ -2,9 +2,9 @@
   <div id="app">
     <div class="body-bg"></div>
 
-    <main class="menu-collapsed">
+    <main>
+      <vue-sidebar></vue-sidebar>
       <page-top></page-top>
-
       <div class="al-main">
         <div class="al-content">
           <router-view></router-view>
@@ -16,11 +16,11 @@
 </template>
 
 <script>
-  import { pageTop } from './components/layout/'
+  import { pageTop, vueSidebar } from './components/layout/'
   export default {
     name: 'app',
     components: {
-      pageTop
+      pageTop, vueSidebar
     }
   }
 </script>

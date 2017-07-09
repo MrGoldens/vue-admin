@@ -1,8 +1,8 @@
 <!-- Created by Cai Kang Jie on 2017/7/9. -->
 <template>
-  <div>
+  <aside class="al-sidebar">
 
-  </div>
+  </aside>
 </template>
 
 <script>
