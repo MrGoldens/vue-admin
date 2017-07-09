@@ -1,4 +1,3 @@
-<!-- Created by Cai Kang Jie on 2017/7/9. -->
 <template>
   <aside class="al-sidebar">
 
