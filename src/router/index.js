@@ -1,10 +1,10 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import routeConfig from '../pages/pages.modules'
 import dashboard from '../pages/dashboard/index.vue'
-Vue.use(Router)
+import dashboard2 from '../pages/dashboard2/index.vue'
+Vue.use (Router)
 
-export default new Router({
+export default new Router ({
   routes: [
     {
       name: 'Dashboard',
@@ -15,6 +15,10 @@ export default new Router({
       path: '*',
       redirect: '/'
     },
-    ...routeConfig.routeConfig
+    {
+      name: 'dashboard2',
+      path: '/',
+      component: dashboard2
+    }
   ]
 })
