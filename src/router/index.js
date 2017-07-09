@@ -1,7 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import dashboard from '../pages/dashboard/index.vue'
-import dashboard2 from '../pages/dashboard2/index.vue'
+import dashboard from 'pages/dashboard/index'
+import dashboard2 from 'pages/dashboard2/index'
+
 Vue.use(Router)
 
 const routes = [

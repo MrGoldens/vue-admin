@@ -1,13 +1,16 @@
 <template>
   <div id="app">
     <div class="body-bg"></div>
+
     <main class="menu-collapsed">
       <page-top></page-top>
+
       <div class="al-main">
         <div class="al-content">
           <router-view></router-view>
         </div>
       </div>
+
     </main>
   </div>
 </template>
