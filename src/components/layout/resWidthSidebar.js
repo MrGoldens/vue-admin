@@ -18,13 +18,12 @@ export default {
 }
 
 function _onWindowResize () {
+  store.commit(TOGGLE_SIDEBAR, window.innerWidth <= 1200)
   if (window.innerWidth <= 1200) {
     console.log('sidebar_hide')
-    store.commit(TOGGLE_SIDEBAR, true)
     console.log(state.app.sidebar.opened)
   } else {
     console.log('sidebar_show')
-    store.commit(TOGGLE_SIDEBAR, false)
     console.log(state.app.sidebar.opened)
   }
 }
