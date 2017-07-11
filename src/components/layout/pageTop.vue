@@ -38,5 +38,4 @@
       sidebar: 'sidebar'
     })
   }
-
 </script>

@@ -3,4 +3,5 @@
  */
 import pageTop from './pageTop'
 import vueSidebar from './vueSidebar'
-export { pageTop, vueSidebar }
+import resWidthSidebar from './resWidthSidebar.js'
+export { pageTop, vueSidebar, resWidthSidebar }

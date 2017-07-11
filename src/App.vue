@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div class="body-bg"></div>
-
+    <res-width-sidebar></res-width-sidebar>
     <main :class="{'menu-collapsed':sidebar.opened}">
       <vue-sidebar></vue-sidebar>
       <page-top></page-top>
@@ -16,12 +16,12 @@
 </template>
 
 <script>
-  import { pageTop, vueSidebar } from './components/layout/'
+  import { pageTop, vueSidebar, resWidthSidebar } from './components/layout/'
   import { mapGetters } from 'vuex'
   export default {
     name: 'app',
     components: {
-      pageTop, vueSidebar
+      pageTop, vueSidebar, resWidthSidebar
     },
     computed: mapGetters({
       sidebar: 'sidebar'
