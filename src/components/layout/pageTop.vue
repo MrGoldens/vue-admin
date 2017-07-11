@@ -1,7 +1,7 @@
 <template>
   <div class="page-top clearfix" v-scroll-position >
     <a href="#/" class="al-logo clearfix"><span>Vue</span>Admin</a>
-    <a href class="collapse-menu-link ion-navicon" ></a>
+    <a class="collapse-menu-link ion-navicon" @click="toggleSidebar({opened: !sidebar.opened})"></a>
 
     <div class="search">
       <i class="ion-ios-search-strong" ></i>
@@ -25,9 +25,18 @@
 
 <script>
   import scrollPosition from './scrollPosition'
+  import { mapGetters, mapActions } from 'vuex'
   export default {
     name: 'pageTop',
-    directives: { scrollPosition }
+    directives: { scrollPosition },
+    methods: {
+      ...mapActions([
+        'toggleSidebar'
+      ])
+    },
+    computed: mapGetters({
+      sidebar: 'sidebar'
+    })
   }
 
 </script>

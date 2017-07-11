@@ -25,6 +25,7 @@ module.exports = {
       '@': resolve('src'),
       'jquery':'jquery',
       pages: path.resolve(__dirname, '../src/pages'),
+      package: path.resolve(__dirname, '../package.json'),
     }
   },
   plugins: [

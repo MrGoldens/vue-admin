@@ -3,6 +3,7 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import store from './store'
 import BootstrapVue from 'bootstrap-vue'
 import Icon from 'vue-awesome/components/Icon'
 import Vuex from 'vuex'
@@ -22,8 +23,9 @@ Vue.component('icon', Icon)
 /* eslint-disable no-new */
 const app = new Vue({
   router,
+  store,
   template: '<App/>',
   components: { App }
 })
 
-export { app, router }
+export { app, router, store }
