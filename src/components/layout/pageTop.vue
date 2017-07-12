@@ -9,7 +9,7 @@
     </div>
 
     <div class="user-profile clearfix">
-      <div class="al-user-profile" u>
+      <div class="al-user-profile">
         <a class="profile-toggle-link">
         </a>
         <ul  class="top-dropdown-menu profile-dropdown" >

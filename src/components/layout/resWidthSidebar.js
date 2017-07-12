@@ -2,10 +2,8 @@
  * Created by Cai Kang Jie on 2017/7/11.
  */
 import $ from 'jquery'
-import { mapGetters } from 'vuex'
+import { mapGetters, mapActions } from 'vuex'
 import store from 'mainStore'
-import { TOGGLE_SIDEBAR } from 'mainStore/mutation-types'
-const { state } = store
 export default {
   name: 'resWidthSidebar',
   mounted () {
@@ -14,16 +12,14 @@ export default {
   computed: mapGetters({
     sidebar: 'sidebar'
   }),
+  methods: {
+    ...mapActions([
+      'toggleSidebar'
+    ])
+  },
   template: '<i v-if="false"></i>'
 }
 
 function _onWindowResize () {
-  store.commit(TOGGLE_SIDEBAR, window.innerWidth <= 1200)
-  if (window.innerWidth <= 1200) {
-    console.log('sidebar_hide')
-    console.log(state.app.sidebar.opened)
-  } else {
-    console.log('sidebar_show')
-    console.log(state.app.sidebar.opened)
-  }
+  store.dispatch('toggleSidebar', {opened: window.innerWidth <= 1200})
 }
