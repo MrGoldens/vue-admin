@@ -8,6 +8,7 @@ export default {
   name: 'resWidthSidebar',
   mounted () {
     $(window).on('resize', _onWindowResize)
+    _onWindowResize()
   },
   computed: mapGetters({
     sidebar: 'sidebar'
