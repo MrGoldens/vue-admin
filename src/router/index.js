@@ -7,13 +7,13 @@ Vue.use(Router)
 
 const routes = [
   {
-    name: 'Dashboard',
+    name: 'home',
     path: '/',
     component: dashboard
   },
   {
     path: '*',
-    redirect: '/home'
+    redirect: '/'
   },
   ...generateRoutesFromRouteConfig(routeConfig.state.items)
 ]
