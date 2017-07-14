@@ -5,9 +5,13 @@
 </template>
 
 <script>
-    export default {
-
-    }
+  import { mapGetters } from 'vuex'
+  export default {
+    name: 'vueSidebar',
+    computed: mapGetters({
+      routeConfig: 'routeConfig'
+    })
+  }
 </script>
 
 <style></style>
