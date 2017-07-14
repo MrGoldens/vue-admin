@@ -28,6 +28,9 @@ function generateRoutesFromRouteConfig (menu = [], routes = []) {
     if (item.path) {
       routes.push(item)
     }
+    if (!item.component) {
+      generateRoutesFromRouteConfig(item.children, routes)
+    }
   }
   return routes
 }
