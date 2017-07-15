@@ -1,11 +1,11 @@
 <template>
   <aside class="al-sidebar">
     <ul class="al-sidebar-list">
-      <li class="al-sidebar-list-item" v-for="item in routeConfig">
+      <router-link :to="item.path" tag="li" active-class="selected" class="al-sidebar-list-item" v-for="item in routeConfig">
         <a class="al-sidebar-list-link">
           <i :class="item.sidebarMeta.icon"></i><span>{{item.name}}</span>
         </a>
-      </li>
+      </router-link>
     </ul>
   </aside>
 </template>

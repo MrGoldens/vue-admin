@@ -7,7 +7,7 @@ const state = {
   items: [
     {
       name: 'Dashboard',
-      path: '/dashboard',
+      path: '/',
       component: lazyLoading('dashboard', true),
       sidebarMeta: {
         title: 'dashboard',
