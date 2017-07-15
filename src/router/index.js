@@ -22,7 +22,9 @@ function generateRoutesFromRouteConfig (menu = [], routes = []) {
     if (item.path) {
       routes.push(item)
     }
-    if (!item.component) {
+    console.log(item)
+    console.log(item.subMenu)
+    if (item.subMenu !== undefined) {
       generateRoutesFromRouteConfig(item.subMenu, routes)
     }
   }
