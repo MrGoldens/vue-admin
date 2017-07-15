@@ -24,6 +24,27 @@ const state = {
         icon: 'ion-android-home',
         order: 1
       }
+    },
+    {
+      name: 'Components',
+      path: '/dashboard2',
+      component: lazyLoading('dashboard2', true),
+      sidebarMeta: {
+        title: 'Components',
+        icon: 'ion-gear-a',
+        order: 100
+      },
+      subMenu: [
+        {
+          name: 'Components2',
+          path: '/subMenu',
+          component: lazyLoading('dashboard2', true),
+          sidebarMeta: {
+            title: 'Components2',
+            order: 1
+          }
+        }
+      ]
     }
   ]
 }

@@ -23,7 +23,7 @@ function generateRoutesFromRouteConfig (menu = [], routes = []) {
       routes.push(item)
     }
     if (!item.component) {
-      generateRoutesFromRouteConfig(item.children, routes)
+      generateRoutesFromRouteConfig(item.subMenu, routes)
     }
   }
   return routes
