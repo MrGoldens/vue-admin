@@ -8,7 +8,12 @@ const state = {
     {
       name: 'Dashboard',
       path: '/dashboard',
-      component: lazyLoading('dashboard', true)
+      component: lazyLoading('dashboard', true),
+      sidebarMeta: {
+        title: 'dashboard',
+        icon: 'ion-android-home',
+        order: 0
+      }
     },
     {
       name: 'Dashboard2',
