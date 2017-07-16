@@ -37,8 +37,8 @@ const state = {
       subMenu: [
         {
           name: 'Components2',
-          path: '/subMenu',
-          component: lazyLoading('dashboard2', true),
+          path: '/ccc/subMenu',
+          component: lazyLoading('dashboard', true),
           sidebarMeta: {
             title: 'Components2',
             order: 1
@@ -46,8 +46,8 @@ const state = {
           subMenu: [
             {
               name: 'Components23',
-              path: '/subMenu2',
-              component: lazyLoading('dashboard', true),
+              path: '/ccc/subMenu/a',
+              component: lazyLoading('dashboard2', true),
               sidebarMeta: {
                 title: 'Components23',
                 order: 1
