@@ -20,6 +20,13 @@ const mutations = {
     if (config.hasOwnProperty('hidden')) {
       state.sidebar.hidden = config.hidden
     }
+  },
+  [types.SIDEBAR_SELECTED] (state, config) {
+    if (config.hasOwnProperty('selected')) {
+      state.sidebar.selected = config.selected
+    } else {
+      state.sidebar.selected = '/'
+    }
   }
 }
 

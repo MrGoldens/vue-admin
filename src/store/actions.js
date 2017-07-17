@@ -9,6 +9,7 @@ export const toggleSidebar = ({ commit }, config) => {
   }
 }
 export const setSelected = ({ commit }, config) => {
+  console.log(config)
   if (config instanceof Object) {
     commit(types.SIDEBAR_SELECTED, config)
   }
