@@ -1,7 +1,7 @@
 <template>
   <aside class="al-sidebar">
     <ul class="al-sidebar-list">
-      <li class="al-sidebar-list-item" v-for="item in routeConfig" :class="{'with-sub-menu':item.subMenu}">
+      <li class="al-sidebar-list-item" v-for="item in routeConfig" :class="{'with-sub-menu':item.subMenu,'selected':item.path===sidebar.selected}">
         <router-link :to="item.path" class="al-sidebar-list-link" v-if="!item.subMenu">
           <i :class="item.sidebarMeta.icon"></i><span>{{item.name}}</span>
         </router-link>
@@ -45,7 +45,8 @@
   export default {
     name: 'vueSidebar',
     computed: mapGetters({
-      routeConfig: 'routeConfig'
+      routeConfig: 'routeConfig',
+      sidebar: 'sidebar'
     })
   }
 </script>

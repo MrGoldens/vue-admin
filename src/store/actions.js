@@ -8,3 +8,8 @@ export const toggleSidebar = ({ commit }, config) => {
     commit(types.TOGGLE_SIDEBAR, config)
   }
 }
+export const setSelected = ({ commit }, config) => {
+  if (config instanceof Object) {
+    commit(types.SIDEBAR_SELECTED, config)
+  }
+}

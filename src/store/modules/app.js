@@ -5,7 +5,8 @@ import * as types from '../mutation-types'
 
 const state = {
   sidebar: {
-    opened: false
+    opened: false,
+    selected: '/'
   }
 }
 
