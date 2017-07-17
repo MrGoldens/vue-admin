@@ -9,10 +9,28 @@
           <i :class="item.sidebarMeta.icon"></i><span>{{item.name}}</span>
           <b class="fa fa-angle-down"></b>
         </a>
-        <ul class="al-sidebar-sublist" v-if="item.subMenu">
-          <li class="ba-sidebar-sublist-item" v-for="subMenu in item.subMenu">
+        <ul class="al-sidebar-sublist" v-if="item.subMenu" :class="{'slide-right': item.slideRight}">
+          <li class="ba-sidebar-sublist-item" v-for="subitem in item.subMenu" :class="{'with-sub-menu':subitem.subMenu}">
             <a class="al-sidebar-list-link subitem-submenu-link">
-              <span>{{subMenu.name}}</span>
+              <span>{{subitem.name}}</span>
+              <b class="fa" :class="{'fa-angle-up': subitem.expanded, 'fa-angle-down': !subitem.expanded}"
+                 v-if="subitem.subMenu"></b>
+            </a>
+            <ul v-if="subitem.subMenu" class="al-sidebar-sublist subitem-submenu-list" :class="{expanded: subitem.expanded, 'slide-right': subitem.slideRight}">
+              <li v-for="subSubitem in subitem.subMenu">
+                <a v-if="subSubitem.disabled" class="al-sidebar-list-link">
+                  {{ subSubitem.title }}
+                </a>
+                <a v-if="!subSubitem.disabled">
+                  {{::subSubitem.title }}
+                </a>
+              </li>
+            </ul>
+            <a v-if="(!subitem.subMenu && subitem.disabled)" class="al-sidebar-list-link">
+              {{ subitem.title }}
+            </a>
+            <a  v-if="(!subitem.subMenu && !subitem.disabled)">
+              {{ subitem.title }}
             </a>
           </li>
         </ul>
