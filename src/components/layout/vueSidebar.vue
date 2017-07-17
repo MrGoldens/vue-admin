@@ -22,7 +22,7 @@
                   {{ subSubitem.title }}
                 </a>
                 <a v-if="!subSubitem.disabled">
-                  {{::subSubitem.title }}
+                  {{ subSubitem.title }}
                 </a>
               </li>
             </ul>
