@@ -1,13 +1,13 @@
 <template>
   <aside class="al-sidebar">
     <ul class="al-sidebar-list">
-      <li class="al-sidebar-list-item" v-for="item in routeConfig" :class="{'with-sub-menu':item.subMenu,'selected':item.path===sidebar.selected}">
+      <li class="al-sidebar-list-item ba-sidebar-item-expanded" v-for="item in routeConfig" :class="{'with-sub-menu':item.subMenu,'selected':item.path===sidebar.selected}">
         <router-link :to="item.path" class="al-sidebar-list-link" v-if="!item.subMenu">
           <i :class="item.sidebarMeta.icon"></i><span>{{item.name}}</span>
         </router-link>
         <a class="al-sidebar-list-link" v-if="item.subMenu">
           <i :class="item.sidebarMeta.icon"></i><span>{{item.name}}</span>
-          <b class="fa fa-angle-down"></b>
+          <b class="fa fa-angle-down" :class="{'fa-angle-up': true}"></b>
         </a>
         <ul class="al-sidebar-sublist" v-if="item.subMenu" :class="{'slide-right': item.slideRight}">
           <li class="ba-sidebar-sublist-item" v-for="subitem in item.subMenu" :class="{'with-sub-menu':subitem.subMenu}">
@@ -47,7 +47,10 @@
     computed: mapGetters({
       routeConfig: 'routeConfig',
       sidebar: 'sidebar'
-    })
+    }),
+    methods: {
+
+    }
   }
 </script>
 
