@@ -33,7 +33,7 @@ const state = {
         title: 'Components',
         icon: 'ion-gear-a',
         order: 100,
-        expanded:false
+        expanded: false
       },
       subMenu: [
         {
