@@ -10,12 +10,12 @@
           <b class="fa fa-angle-down" :class="{'fa-angle-up': true}"></b>
         </a>
         <ul class="al-sidebar-sublist" v-if="item.subMenu" :class="{'slide-right': item.slideRight}">
-          <li class="ba-sidebar-sublist-item" v-for="subitem in item.subMenu" :class="{'with-sub-menu':subitem.subMenu}">
-            <a class="al-sidebar-list-link subitem-submenu-link">
+          <li class="ba-sidebar-sublist-item" v-for="subitem in item.subMenu" :class="{'with-sub-menu':subitem.subMenu,'selected':subitem.path===sidebar.selected}">
+            <router-link :to="subitem.path" class="al-sidebar-list-link subitem-submenu-link" >
               <span>{{subitem.name}}</span>
               <b class="fa" :class="{'fa-angle-up': subitem.expanded, 'fa-angle-down': !subitem.expanded}"
                  v-if="subitem.subMenu"></b>
-            </a>
+            </router-link>
             <ul v-if="subitem.subMenu" class="al-sidebar-sublist subitem-submenu-list" :class="{expanded: subitem.expanded, 'slide-right': subitem.slideRight}">
               <li v-for="subSubitem in subitem.subMenu">
                 <a v-if="subSubitem.disabled" class="al-sidebar-list-link">
