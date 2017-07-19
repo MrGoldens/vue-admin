@@ -37,6 +37,15 @@ const state = {
       },
       subMenu: [
         {
+          name: 'cccc',
+          path: '/cccc',
+          component: lazyLoading('dashboard2', true),
+          sidebarMeta: {
+            title: 'ccccc',
+            order: 1
+          }
+        },
+        {
           name: 'Components2',
           path: '/ccc/subMenu',
           component: lazyLoading('dashboard', true),
