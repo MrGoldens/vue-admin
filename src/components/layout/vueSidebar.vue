@@ -17,20 +17,20 @@
                  v-if="subitem.subMenu"></b>
             </router-link>
             <ul v-if="subitem.subMenu" class="al-sidebar-sublist subitem-submenu-list" :class="{expanded: subitem.expanded, 'slide-right': subitem.slideRight}">
-              <li v-for="subSubitem in subitem.subMenu">
+              <li v-for="subSubitem in subitem.subMenu" :class="{'with-sub-menu':subitem.subMenu,'selected':subitem.path===sidebar.selected}">
                 <a v-if="subSubitem.disabled" class="al-sidebar-list-link">
-                  {{ subSubitem.title }}
+                  {{ subSubitem.name }}
                 </a>
-                <a v-if="!subSubitem.disabled">
-                  {{ subSubitem.title }}
-                </a>
+                <router-link :to="subSubitem.path">
+                  {{ subSubitem.name }}
+                </router-link>
               </li>
             </ul>
             <a v-if="(!subitem.subMenu && subitem.disabled)" class="al-sidebar-list-link">
-              {{ subitem.title }}
+              {{ subitem.name }}
             </a>
             <a  v-if="(!subitem.subMenu && !subitem.disabled)">
-              {{ subitem.title }}
+              {{ subitem.name }}
             </a>
           </li>
         </ul>
@@ -49,7 +49,9 @@
       sidebar: 'sidebar'
     }),
     methods: {
-
+      show (data) {
+        console.log(data, typeof (data))
+      }
     }
   }
 </script>
