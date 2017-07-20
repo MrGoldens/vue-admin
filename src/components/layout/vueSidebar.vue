@@ -7,7 +7,7 @@
         </router-link>
         <a class="al-sidebar-list-link" v-if="item.subMenu">
           <i :class="item.sidebarMeta.icon"></i><span>{{item.name}}</span>
-          <b class="fa fa-angle-down" :class="{'fa-angle-up': true}"></b>
+          <b class="fa fa-angle-down" :class="{'fa-angle-up': item.expanded}"></b>
         </a>
         <ul class="al-sidebar-sublist" v-if="item.subMenu" :class="{'slide-right': item.slideRight}">
           <li class="ba-sidebar-sublist-item" v-for="subitem in item.subMenu" :class="{'with-sub-menu':subitem.subMenu,'selected':subitem.path===sidebar.selected}">
