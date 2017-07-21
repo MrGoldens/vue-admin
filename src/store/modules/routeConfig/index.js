@@ -2,7 +2,7 @@
  * Created by Cai Kang Jie on 2017/7/13.
  */
 import lazyLoading from './lazyLoading'
-
+import * as types from '../../mutation-types'
 const state = {
   items: [
     {
@@ -70,7 +70,14 @@ const state = {
     }
   ]
 }
+const mutations = {
+  [types.EXPAND_MENU] (state, config) {
+    if (config.hasOwnProperty('expanded')) {
 
+    }
+  }
+}
 export default {
-  state
+  state,
+  mutations
 }

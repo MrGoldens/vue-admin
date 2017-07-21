@@ -5,9 +5,9 @@
         <router-link :to="item.path" class="al-sidebar-list-link" v-if="!item.subMenu">
           <i :class="item.sidebarMeta.icon"></i><span>{{item.name}}</span>
         </router-link>
-        <a class="al-sidebar-list-link" v-if="item.subMenu">
+        <a class="al-sidebar-list-link" v-if="item.subMenu" @click="show(2)">
           <i :class="item.sidebarMeta.icon"></i><span>{{item.name}}</span>
-          <b class="fa fa-angle-down" :class="{'fa-angle-up': item.expanded}"></b>
+          <b class="fa fa-angle-down" :class="{'fa-angle-up': item.expanded}" ></b>
         </a>
         <ul class="al-sidebar-sublist" v-if="item.subMenu" :class="{'slide-right': item.slideRight}">
           <li class="ba-sidebar-sublist-item" v-for="subitem in item.subMenu" :class="{'with-sub-menu':subitem.subMenu,'selected':subitem.path===sidebar.selected}">
@@ -53,7 +53,7 @@
         console.log(data, typeof (data))
       },
       ...mapActions([
-        'toggleSidebar'
+        'setExpanded'
       ])
     }
   }
