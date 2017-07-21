@@ -29,11 +29,11 @@ const state = {
       name: 'Components',
       path: '/ccc',
       component: lazyLoading('dashboard2', true),
+      expanded: false,
       sidebarMeta: {
         title: 'Components',
         icon: 'ion-gear-a',
-        order: 100,
-        expanded: false
+        order: 100
       },
       subMenu: [
         {
@@ -49,6 +49,7 @@ const state = {
           name: 'Components2',
           path: '/ccc/subMenu',
           component: lazyLoading('dashboard', true),
+          expanded: false,
           sidebarMeta: {
             title: 'Components2',
             order: 1
