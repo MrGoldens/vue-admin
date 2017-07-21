@@ -40,7 +40,7 @@
 </template>
 
 <script>
-  import { mapGetters } from 'vuex'
+  import { mapGetters, mapActions } from 'vuex'
   import 'font-awesome/scss/font-awesome.scss'
   export default {
     name: 'vueSidebar',
@@ -51,7 +51,10 @@
     methods: {
       show (data) {
         console.log(data, typeof (data))
-      }
+      },
+      ...mapActions([
+        'toggleSidebar'
+      ])
     }
   }
 </script>
