@@ -14,3 +14,9 @@ export const setSelected = ({ commit }, config) => {
     commit(types.SIDEBAR_SELECTED, config)
   }
 }
+export const setExpanded = ({ commit }, config) => {
+  console.log(config)
+  if (config instanceof Object) {
+    commit(types.EXPAND_MENU, config)
+  }
+}
