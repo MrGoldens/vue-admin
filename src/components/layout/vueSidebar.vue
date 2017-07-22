@@ -5,7 +5,7 @@
         <router-link :to="item.path" class="al-sidebar-list-link" v-if="!item.subMenu">
           <i :class="item.sidebarMeta.icon"></i><span>{{item.name}}</span>
         </router-link>
-        <a class="al-sidebar-list-link" v-if="item.subMenu" @click="show({index:index, expanded:!item.expanded})">
+        <a class="al-sidebar-list-link" v-if="item.subMenu" @click="setExpanded({index:index, expanded:!item.expanded})">
           <i :class="item.sidebarMeta.icon"></i><span>{{item.name}}</span>
           <b class="fa fa-angle-down" :class="{'fa-angle-up': item.expanded}" ></b>
         </a>
