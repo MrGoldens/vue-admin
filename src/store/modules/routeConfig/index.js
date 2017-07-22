@@ -72,7 +72,7 @@ const state = {
 }
 const mutations = {
   [types.EXPAND_MENU] (state, config) {
-    if (config.hasOwnProperty('expanded')) {
+    if (config.hasOwnProperty('expanded') && config.hasOwnProperty('index')) {
 
     }
   }
