@@ -1,11 +1,11 @@
 <template>
   <aside class="al-sidebar">
     <ul class="al-sidebar-list">
-      <li class="al-sidebar-list-item ba-sidebar-item-expanded" v-for="item in routeConfig" :class="{'with-sub-menu':item.subMenu,'selected':item.path===sidebar.selected}">
+      <li class="al-sidebar-list-item ba-sidebar-item-expanded" v-for="(item, index) in routeConfig" :class="{'with-sub-menu':item.subMenu,'selected':item.path===sidebar.selected}">
         <router-link :to="item.path" class="al-sidebar-list-link" v-if="!item.subMenu">
           <i :class="item.sidebarMeta.icon"></i><span>{{item.name}}</span>
         </router-link>
-        <a class="al-sidebar-list-link" v-if="item.subMenu" @click="show(2)">
+        <a class="al-sidebar-list-link" v-if="item.subMenu" @click="show(index, item.expanded)">
           <i :class="item.sidebarMeta.icon"></i><span>{{item.name}}</span>
           <b class="fa fa-angle-down" :class="{'fa-angle-up': item.expanded}" ></b>
         </a>
@@ -49,8 +49,9 @@
       sidebar: 'sidebar'
     }),
     methods: {
-      show (data) {
-        console.log(data, typeof (data))
+      show (index, data) {
+//        console.log(data, typeof (data))
+        console.log(index, typeof (index))
       },
       ...mapActions([
         'setExpanded'
