@@ -9,7 +9,7 @@
           <i :class="item.sidebarMeta.icon"></i><span>{{item.name}}</span>
           <b class="fa" :class="{'fa-angle-up': item.expanded, 'fa-angle-down': !item.expanded}" ></b>
         </a>
-        <ul class="al-sidebar-sublist" v-if="item.subMenu" :class="{'slide-right': item.slideRight}">
+        <ul class="al-sidebar-sublist" v-if="item.subMenu" :class="{'slide-right': item.slideRight,'expanded': item.expanded}">
           <li class="ba-sidebar-sublist-item" v-for="subitem in item.subMenu" :class="{'with-sub-menu':subitem.subMenu,'selected':subitem.path===sidebar.selected}">
             <router-link :to="subitem.path" class="al-sidebar-list-link subitem-submenu-link" >
               <span>{{subitem.name}}</span>
