@@ -14,8 +14,6 @@ export const setSelected = ({ commit }, config) => {
   }
 }
 export const setExpanded = ({ commit }, config) => {
-  console.log(commit)
-  console.log(config)
   if (config instanceof Object) {
     commit(types.EXPAND_MENU, config)
   }
