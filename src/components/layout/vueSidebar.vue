@@ -26,7 +26,7 @@
                 </router-link>
               </li>
             </ul>
-            <a v-if="(!subitem.subMenu && subitem.disabled)" class="al-sidebar-list-link" @click="setExpanded({index:index,subIndex:subIndex, expanded:!item.expanded})">
+            <a v-if="(!subitem.subMenu && subitem.disabled)" class="al-sidebar-list-link" @click="setExpanded({index:index, subIndex:subIndex, expanded:!item.expanded})">
               {{ subitem.name }}
             </a>
             <a  v-if="(!subitem.subMenu && !subitem.disabled)">
