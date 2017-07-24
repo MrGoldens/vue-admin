@@ -18,7 +18,7 @@
             </router-link>
             <ul v-if="subitem.subMenu" class="al-sidebar-sublist subitem-submenu-list" :class="{expanded: subitem.expanded, 'slide-right': subitem.slideRight}">
               <li v-for="subSubitem in subitem.subMenu" :class="{'with-sub-menu':subitem.subMenu,'selected':subitem.path===sidebar.selected}">
-                <a v-if="subSubitem.disabled" class="al-sidebar-list-link" @click="setExpanded({index:index, expanded:!item.expanded})">
+                <a v-if="subSubitem.disabled" class="al-sidebar-list-link">
                   {{ subSubitem.name }}
                 </a>
                 <router-link :to="subSubitem.path">
@@ -26,7 +26,7 @@
                 </router-link>
               </li>
             </ul>
-            <a v-if="(!subitem.subMenu && subitem.disabled)" class="al-sidebar-list-link">
+            <a v-if="(!subitem.subMenu && subitem.disabled)" class="al-sidebar-list-link" @click="setExpanded({index:index, expanded:!item.expanded})">
               {{ subitem.name }}
             </a>
             <a  v-if="(!subitem.subMenu && !subitem.disabled)">
