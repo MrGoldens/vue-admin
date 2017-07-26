@@ -72,6 +72,7 @@ const state = {
 }
 const mutations = {
   [types.EXPAND_MENU] (state, config) {
+    console.log(config)
     if (config.hasOwnProperty('subIndex')) {
       console.log('subMenu check')
       state.items[config.index].subMenu[config.subIndex].expanded = config.expanded
