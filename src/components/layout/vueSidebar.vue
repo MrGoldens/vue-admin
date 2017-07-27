@@ -26,7 +26,7 @@
                 </router-link>
               </li>
             </ul>
-            <a v-if="(!subitem.subMenu && subitem.disabled)" class="al-sidebar-list-link" @click="setExpanded({index:index, subIndex:subIndex, expanded:!item.expanded})">
+            <a v-if="(!subitem.subMenu && subitem.disabled)" class="al-sidebar-list-link" @click="show({index:index, subIndex:subIndex, expanded:!item.expanded})">
               {{ subitem.name }}
             </a>
             <a  v-if="(!subitem.subMenu && !subitem.disabled)">
@@ -49,9 +49,10 @@
       sidebar: 'sidebar'
     }),
     methods: {
-      show (index, data) {
+      show (obj) {
 //        console.log(data, typeof (data))
-        console.log(index, typeof (index))
+        console.log(obj.index, typeof (obj.index))
+        console.log(obj.subIndex, typeof (obj.subIndex))
       },
       ...mapActions([
         'setExpanded'
