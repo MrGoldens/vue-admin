@@ -27,12 +27,12 @@
                 </router-link>
               </li>
             </ul>
-            <a v-if="(!subitem.subMenu && subitem.disabled)" class="al-sidebar-list-link">
-              {{ subitem.name }}
-            </a>
-            <a  v-if="(!subitem.subMenu && !subitem.disabled)">
-              {{ subitem.name }}
-            </a>
+            <!--<a v-if="(!subitem.subMenu && subitem.disabled)" class="al-sidebar-list-link">-->
+              <!--{{ subitem.name }}-->
+            <!--</a>-->
+            <!--<a  v-if="(!subitem.subMenu && !subitem.disabled)">-->
+              <!--{{ subitem.name }}-->
+            <!--</a>-->
           </li>
         </ul>
       </li>
