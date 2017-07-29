@@ -18,7 +18,7 @@
                  v-if="subitem.subMenu"></b>
             </router-link>
             <ul v-if="subitem.subMenu" class="al-sidebar-sublist subitem-submenu-list" :class="{expanded: subitem.expanded, 'slide-right': subitem.slideRight}">
-              <li v-for="subSubitem in subitem.subMenu" :class="{'with-sub-menu':subitem.subMenu,'selected':subitem.path===sidebar.selected}">
+              <li v-for="subSubitem in subitem.subMenu" :class="{'with-sub-menu':subSubitem.subMenu,'selected':subSubitem.path===sidebar.selected}">
                 <a v-if="subSubitem.disabled" class="al-sidebar-list-link">
                   {{ subSubitem.name }}
                 </a>
