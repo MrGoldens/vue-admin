@@ -11,12 +11,11 @@
         </a>
         <ul class="al-sidebar-sublist" v-if="item.subMenu" :class="{'slide-right': item.slideRight,'expanded': item.expanded}">
           <li class="ba-sidebar-sublist-item"  v-for="(subitem, subIndex) in item.subMenu" :class="{'with-sub-menu':subitem.subMenu,'selected':subitem.path===sidebar.selected}">
-            <router-link :to="subitem.path" class="al-sidebar-list-link subitem-submenu-link"
-                         @click.native="setExpanded({index:index, subIndex:subIndex, expanded:!subitem.expanded})">
+            <a class="al-sidebar-list-link subitem-submenu-link" v-if="subitem.subMenu"
+                         @click="setExpanded({index:index, subIndex:subIndex, expanded:!subitem.expanded})">
               <span>{{subitem.name}}</span>
-              <b class="fa" :class="{'fa-angle-up': subitem.expanded, 'fa-angle-down': !subitem.expanded}"
-                 v-if="subitem.subMenu"></b>
-            </router-link>
+              <b class="fa" :class="{'fa-angle-up': subitem.expanded, 'fa-angle-down': !subitem.expanded}"></b>
+            </a>
             <ul v-if="subitem.subMenu" class="al-sidebar-sublist subitem-submenu-list" :class="{expanded: subitem.expanded, 'slide-right': subitem.slideRight}">
               <li v-for="subSubitem in subitem.subMenu" :class="{'with-sub-menu':subSubitem.subMenu,'selected':subSubitem.path===sidebar.selected}">
                 <a v-if="subSubitem.disabled" class="al-sidebar-list-link">
@@ -27,12 +26,9 @@
                 </router-link>
               </li>
             </ul>
-            <!--<a v-if="(!subitem.subMenu && subitem.disabled)" class="al-sidebar-list-link">-->
-              <!--{{ subitem.name }}-->
-            <!--</a>-->
-            <!--<a  v-if="(!subitem.subMenu && !subitem.disabled)">-->
-              <!--{{ subitem.name }}-->
-            <!--</a>-->
+            <router-link :to="subitem.path" v-if="(!subitem.subMenu && !subitem.disabled)" class="al-sidebar-list-link">
+              {{ subitem.name }}
+            </router-link>
           </li>
         </ul>
       </li>
