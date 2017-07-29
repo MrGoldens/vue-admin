@@ -26,7 +26,7 @@
                 </router-link>
               </li>
             </ul>
-            <router-link :to="subitem.path" v-if="(!subitem.subMenu && !subitem.disabled)" class="al-sidebar-list-link">
+            <router-link :to="subitem.path" v-if="!subitem.subMenu" class="al-sidebar-list-link">
               {{ subitem.name }}
             </router-link>
           </li>
