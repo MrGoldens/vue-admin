@@ -1,6 +1,7 @@
 /**
  * Created by Cai Kang Jie on 2017/7/31.
  */
+import lazyLoading from './../../store/modules/routeConfig/lazyLoading'
 const panels = {
   name: 'panels',
   path: '/panels',
@@ -12,4 +13,4 @@ const panels = {
   }
 }
 
-export default panels
+export { panels }

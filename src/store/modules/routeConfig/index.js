@@ -3,7 +3,7 @@
  */
 import lazyLoading from './lazyLoading'
 import * as types from '../../mutation-types'
-import panels from '/src/pages/ui/panels'
+import { panels } from '../../../pages/ui'
 const state = {
   items: [
     ...panels,
