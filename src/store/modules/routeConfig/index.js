@@ -3,10 +3,9 @@
  */
 import lazyLoading from './lazyLoading'
 import * as types from '../../mutation-types'
-import { panels } from '../../../pages/ui'
+import panels from '../../../pages/ui'
 const state = {
   items: [
-    ...panels,
     {
       name: 'Dashboard',
       path: '/',
@@ -69,7 +68,8 @@ const state = {
           ]
         }
       ]
-    }
+    },
+    panels
   ]
 }
 const mutations = {
