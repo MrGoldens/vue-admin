@@ -3,12 +3,21 @@
  */
 import lazyLoading from './../../store/modules/routeConfig/lazyLoading'
 export default {
-  name: 'panels',
-  path: '/ui/panels',
-  component: lazyLoading('ui/panels'),
+  name: 'UI Features',
+  expanded: false,
   sidebarMeta: {
-    title: 'panels',
+    title: 'UI Features',
     icon: 'ion-android-laptop',
     order: 1
-  }
+  },
+  subMenu: [{
+    name: 'panels',
+    path: '/ui/panels',
+    component: lazyLoading('ui/panels'),
+    sidebarMeta: {
+      title: 'panels',
+      icon: 'ion-android-laptop',
+      order: 1
+    }
+  }]
 }
