@@ -1,12 +1,17 @@
 <template>
   <div>
-   <h2>Bootstrap panels</h2>
+    <h2>Default panels</h2>
     <div class="row">
-      <vue-panel>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac mi erat. Phasellus placerat, elit a laoreet
-        semper, enim ipsum ultricies orci, ac tincidunt tellus massa eu est. Nam non porta purus, sed facilisis justo. Nam
-        pulvinar sagittis quam.
-      </vue-panel>
+      <div class="col-md-12 col-lg-4">
+        <vue-panel>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac mi erat. Phasellus placerat, elit a laoreet
+          semper, enim ipsum ultricies orci, ac tincidunt tellus massa eu est. Nam non porta purus, sed facilisis justo. Nam
+          pulvinar sagittis quam.
+        </vue-panel>
+      </div>
+    </div>
+   <h2>Bootstrap panels</h2>
+      <div class="row">
       <div class="col-md-12 col-lg-4">
         <div class="panel panel-default bootstrap-panel xsmall-panel">
           <div class="panel-body">

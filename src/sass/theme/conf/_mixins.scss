@@ -40,7 +40,7 @@
 }
 
 @mixin main-background() {
-  $mainBgUrl: $images-root + 'bg.jpg';
+  $mainBgUrl: $images-root + 'blur-bg.jpg';
 
   &::before {
     content: '';
