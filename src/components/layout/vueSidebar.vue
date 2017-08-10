@@ -59,7 +59,7 @@
 </script>
 
 <style lang="scss" scoped>
-  @import "../../sass/theme/styleGuideline/dark";
+  @import "../../sass/theme/conf/colorScheme/blur";
   a.al-sidebar-list-link:hover{
     color: $primary;
   }
