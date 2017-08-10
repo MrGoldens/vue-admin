@@ -44,13 +44,10 @@ $angle-right: "\f101";
       }
     }
   }
-  ul.expanded{
-    display: block;
-  }
 }
 
-.al-sidebar-list-item, .vue-sidebar-sublist-item {
-  &.vue-sidebar-item-expanded {
+.al-sidebar-list-item, .ba-sidebar-sublist-item {
+  &.ba-sidebar-item-expanded {
     > .al-sidebar-list-link {
       b {
         transform: rotate(180deg);

@@ -24,7 +24,7 @@ a.al-logo {
   line-height: 60px;
 
   span {
-    color: $danger;
+    color: $primary;
   }
 }
 
@@ -95,6 +95,14 @@ a.collapse-menu-link {
     overflow-y: scroll;
     overflow-x: hidden;
   }
+}
+
+.icon-palette {
+  display: inline-block;
+  width: 14px;
+  height: 13px;
+  @include bg('theme/palette.png');
+  background-size: cover;
 }
 
 .search {
