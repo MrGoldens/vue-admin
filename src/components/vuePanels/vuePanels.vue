@@ -1,7 +1,9 @@
 <template>
-<div class="panel panel-blur ba-panel-blur">
+<div class="panel panel-blur xsmall-panel light-text animated zoomIn">
   <div class="panel-body">
-    <slot></slot>
+    <span>
+      <slot></slot>
+    </span>
   </div>
 </div>
 </template>
