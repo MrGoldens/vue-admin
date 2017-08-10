@@ -41,7 +41,7 @@ $panel-heading-font-size: 16px;
 }
 
 .panel.panel-blur {
-  $blurredBgUrl: $images-root + 'bg.jpg';
+  $blurredBgUrl: $images-root + 'bg_blurred.jpg';
   background: url($blurredBgUrl);
   transition: none;
   background-attachment: fixed;
