@@ -1,5 +1,5 @@
 <template>
-<div class="panel panel-blur xsmall-panel light-text animated zoomIn">
+<div class="panel panel-blur">
   <div class="panel-body">
     <span>
       <slot></slot>
