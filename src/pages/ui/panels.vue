@@ -3,14 +3,56 @@
     <h2>Default panels</h2>
     <div class="row">
       <div class="col-md-12 col-lg-4">
-        <vue-panel>
+        <vue-panel class="xsmall-panel light-text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac mi erat. Phasellus placerat, elit a laoreet
           semper, enim ipsum ultricies orci, ac tincidunt tellus massa eu est. Nam non porta purus, sed facilisis justo. Nam
           pulvinar sagittis quam.
         </vue-panel>
       </div>
+      <div class="col-md-12 col-lg-4">
+        <vue-panel class="xsmall-panel light-text" vue-panel-title="Panel with header">
+          Phasellus maximus venenatis augue, et vestibulum neque aliquam ut. Morbi mattis libero vitae vulputate dignissim.
+          Praesent placerat, sem non dapibus cursus, lacus nisi blandit quam, vitae porttitor lectus lacus non turpis. Donec
+          suscipit consequat tellus.
+        </vue-panel>
+      </div>
+      <div class="col-md-12 col-lg-4">
+        <vue-panel class="xsmall-panel with-scroll light-text" vue-panel-title="Panel with header & scroll">
+          <p>
+            Suspendisse nec tellus urna. Sed id est metus. Nullam sit amet dolor nec ipsum dictum suscipit. Mauris sed nisi
+            mauris. Nulla iaculis nisl ut velit ornare imperdiet. Suspendisse potenti. In tempor leo sed sem malesuada
+            pellentesque. Maecenas faucibus metus lacus, ac egestas diam vulputate vitae.
+          </p>
+
+
+          <p>
+            Sed dapibus, purus vel hendrerit consectetur, lectus orci gravida massa, sed bibendum dui mauris et eros. Nulla
+            dolor massa, posuere et dictum sit amet, dignissim quis odio. Fusce mollis finibus dignissim. Integer sodales
+            augue erat. Pellentesque laoreet vestibulum urna at iaculis. Nulla libero augue, euismod at diam eget, aliquam
+            condimentum ligula. Donec a leo eu est molestie lacinia hendrerit sed lorem. Duis id diam eu metus sodales
+            consequat vel eu elit. Praesent dolor nibh, convallis eleifend feugiat a, finibus porttitor nibh. Ut non libero
+            vel velit pulvinar scelerisque non vel lorem. Integer porta tempor nulla. Sed nibh erat, ultrices vel lorem eu,
+            rutrum vehicula sem.
+          </p>
+
+          <p>
+            Donec nec tellus urna. Sed id est metus. Nullam sit amet dolor nec ipsum dictum suscipit. Mauris sed nisi
+            mauris. Nulla iaculis nisl ut velit ornare imperdiet. Suspendisse potenti. In tempor leo sed sem malesuada
+            pellentesque. Maecenas faucibus metus lacus, ac egestas diam vulputate vitae.
+          </p>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fermentum nec ligula egestas rhoncus. Sed
+            dignissim, augue vel scelerisque vulputate, nisi ante posuere lorem, quis iaculis eros dolor eu nisl. Etiam
+            sagittis, ipsum ac tempor iaculis, justo neque mattis ante, ac maximus sapien risus eu sapien. Morbi erat urna,
+            varius et lectus vel, porta dictum orci. Duis bibendum euismod elit, et lobortis purus venenatis in. Mauris eget
+            lacus enim. Cras quis sem et magna fringilla convallis. Proin hendrerit nulla vel gravida mollis. Interdum et
+            malesuada fames ac ante ipsum primis in faucibus. Vestibulum consectetur quis purus vel aliquam.
+          </p>
+        </vue-panel>
+      </div>
     </div>
-   <h2>Bootstrap panels</h2>
+    <h2>Bootstrap panels</h2>
       <div class="row">
       <div class="col-md-12 col-lg-4">
         <div class="panel panel-default bootstrap-panel xsmall-panel">
