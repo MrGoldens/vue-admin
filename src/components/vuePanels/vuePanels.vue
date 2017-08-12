@@ -31,9 +31,6 @@
           finalWidth = elemW
           finalHeight = (elemW * imgRatio)
         }
-        console.log({width: finalWidth, height: finalHeight, positionX: (elemW - finalWidth) / 2, positionY: (elemH - finalHeight) / 2})
-        console.log({backgroundSize: finalWidth + 'px' + ' ' + finalHeight + 'px', backgroundPosition: ((elemW - finalWidth) / 2) + 'px' + ' ' + ((elemH - finalHeight) / 2) + 'px'})
-//        return {width: finalWidth, height: finalHeight, positionX: (elemW - finalWidth) / 2, positionY: (elemH - finalHeight) / 2}
         return {backgroundSize: finalWidth + 'px' + ' ' + finalHeight + 'px', backgroundPosition: ((elemW - finalWidth) / 2) + 'px' + ' ' + ((elemH - finalHeight) / 2) + 'px'}
       }
     },
