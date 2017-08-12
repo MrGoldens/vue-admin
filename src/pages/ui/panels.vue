@@ -58,7 +58,6 @@
         <div class="panel panel-default bootstrap-panel xsmall-panel">
           <div class="panel-body">
             <p>A panel in bootstrap is a bordered box with some padding around its content.</p>
-
             <p class="p-with-code">Panels are created with the <code>.panel</code> class, and content inside the panel has a
               <code>.panel-body</code> class. The <code>.panel-default .panel-primary .panel-danger</code> and other classes
               are used to style the color of the
