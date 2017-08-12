@@ -31,7 +31,10 @@
           finalWidth = elemW
           finalHeight = (elemW * imgRatio)
         }
-        return {backgroundSize: finalWidth + 'px' + ' ' + finalHeight + 'px', backgroundPosition: ((elemW - finalWidth) / 2) + 'px' + ' ' + ((elemH - finalHeight) / 2) + 'px'}
+        return {
+          backgroundSize: finalWidth + 'px' + ' ' + finalHeight + 'px',
+          backgroundPosition: ((elemW - finalWidth) / 2) + 'px' + ' ' + ((elemH - finalHeight) / 2) + 'px'
+        }
       }
     },
     data () {
