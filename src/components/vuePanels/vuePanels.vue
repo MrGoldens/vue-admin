@@ -1,5 +1,5 @@
 <template>
-<div class="panel panel-blur" :style="bgStyle">
+<div class="panel panel-blur" :style="getBodyBgImageSizes()">
   <div class="panel-heading clearfix" v-show="vuePanelTitle!=null">
     <h3 class="panel-title">{{vuePanelTitle}}</h3>
   </div>
@@ -45,7 +45,21 @@
         bgStyle: this.getBodyBgImageSizes()
       }
     },
-    props: ['vuePanelTitle']
+    props: ['vuePanelTitle'],
+    mounted () {
+      let bodyBgSize = this.getBodyBgImageSizes()
+      function recalculatePanelStyle () {
+        console.log('触发开始！')
+        console.log(bodyBgSize)
+        if (!bodyBgSize) {
+          return
+        }
+        this.bgStyle = bodyBgSize
+        console.log('触发结束！')
+        console.log(this.bgStyle)
+      }
+      window.addEventListener('resize', recalculatePanelStyle)
+    }
   }
 </script>
 
