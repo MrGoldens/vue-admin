@@ -1,9 +1,9 @@
 <template>
 <div class="panel panel-blur" :style="bgStyle">
+  <div class="panel-heading clearfix" v-show="vuePanelTitle!=null">
+    <h3 class="panel-title">{{vuePanelTitle}}</h3>
+  </div>
   <div class="panel-body">
-    <div class="panel-heading clearfix" v-show="vuePanelTitle!=null">
-      <h3 class="panel-title">{{vuePanelTitle}}</h3>
-    </div>
     <span>
       <slot></slot>
     </span>
