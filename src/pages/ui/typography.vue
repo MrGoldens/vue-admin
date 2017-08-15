@@ -32,6 +32,7 @@
         </div>
       </vue-panel>
     </div>
+
     <div class="col-xlg-3 col-lg-6  col-md-6 col-sm-6 col-xs-12 typography-widget">
       <vue-panel class="with-scroll more-text-widget" vue-panel-title="Some more text">
         <div class="section-block light-text">
@@ -69,6 +70,48 @@
           <p>lacinia scelerisque pharetra, placerat vestibulum eleifend</p>
 
           <p> pellentesque, mi nam.</p>
+        </div>
+      </vue-panel>
+    </div>
+    <div class="col-xlg-3 col-lg-6  col-md-6 col-sm-6 col-xs-12 typography-widget">
+      <vue-panel class="with-scroll lists-widget" vue-panel-title="Lists">
+        <div class="section-block">
+          <h5 class="list-header">Unordered list:</h5>
+          <ul class="blur">
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Сlacinia scelerisque pharetra
+              <ul>
+                <li>Dui rhoncus quisque integer lorem
+                  <ul>
+                    <li>Libero iaculis vestibulum eu vitae</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>Nisl lectus nibh habitasse suspendisse ut</li>
+            <li><span>Posuere cursus hac, vestibulum wisi nulla bibendum</span></li>
+          </ul>
+          <h5 class="list-header">Ordered Lists:</h5>
+          <ol class="blur">
+            <li><span>Eu non nec cursus quis mollis, amet quam nec</span></li>
+            <li><span>Et suspendisse, adipiscing fringilla ornare sit ligula sed</span>
+              <ol>
+                <li><span>Interdum et justo nulla</span>
+                  <ol>
+                    <li><span>Magna amet, suscipit suscipit non amet</span></li>
+                  </ol>
+                </li>
+              </ol>
+            </li>
+            <li><span>Metus duis eu non eu ridiculus turpis</span></li>
+            <li>
+              <span>Neque egestas id fringilla consectetuer justo curabitur, wisi magna neque commodo volutpat</span>
+            </li>
+          </ol>
+          <div class="accent">Important text fragment. Lorem ipsum dolor sit amet, id mollis iaculis mi nisl
+            pulvinar,
+            lacinia scelerisque pharetra.
+          </div>
         </div>
       </vue-panel>
     </div>
