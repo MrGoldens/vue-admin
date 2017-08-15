@@ -32,6 +32,46 @@
         </div>
       </vue-panel>
     </div>
+    <div class="col-xlg-3 col-lg-6  col-md-6 col-sm-6 col-xs-12 typography-widget">
+      <vue-panel class="with-scroll more-text-widget" vue-panel-title="Some more text">
+        <div class="section-block light-text">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis
+            ullamcorper ligula sodales at. Nulla tellus elit, varius non commodo eget, mattis vel eros. In sed
+            ornare
+            nulla. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis.
+          </p>
+        </div>
+        <div class="section-block regular-text">
+          <p>Curabitur bibendum ornare dolor, quis ullamcorper ligula dfgz`zzsodales at. Nullam quis risus eget urna
+            mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+            ridiculus
+            mus. Nullam id dolor id.
+          </p>
+        </div>
+        <div class="section-block upper-text bold-text">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor,
+            quis
+            ullamcorper ligula sodales at. Nulla tellus elit, varius non commodo eget, mattis vel eros. In sed
+            ornare
+            nulla. </p>
+        </div>
+        <div class="section-block bold-text">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor,
+            quis
+            ullam-corper ligula sodales at. Nulla tellus elit, varius non commodo eget, mattis vel eros. In sed
+            ornare
+            nulla.
+          </p>
+        </div>
+        <div class="section-block small-text">
+          <p>Secondary text. Lorem ipsum dolor sit amet, id mollis iaculis mi nisl pulvinar,</p>
+
+          <p>lacinia scelerisque pharetra, placerat vestibulum eleifend</p>
+
+          <p> pellentesque, mi nam.</p>
+        </div>
+      </vue-panel>
+    </div>
   </div>
 </template>
 
