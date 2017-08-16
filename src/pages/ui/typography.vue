@@ -115,6 +115,40 @@
         </div>
       </vue-panel>
     </div>
+    <div class="col-xlg-3 col-lg-6  col-md-6 col-sm-6 col-xs-12 typography-widget">
+      <vue-panel class="with-scroll color-widget" vue-panel-title="Text Color">
+        <div class="section-block red-text ">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis
+            ullamcorper ligula sodales at. Nulla tellus elit, varius non commodo eget, mattis vel eros. In sed
+            ornare
+            nulla. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis
+            dis
+            parturient montes, nascetur ridiculus mus.
+          </p>
+        </div>
+        <div class="section-block yellow-text ">
+          <p>Curabitur bibendum ornare dolor, quis ullamcorper ligula dfgz`zzsodales at. Nullam quis risus eget
+            urna
+            mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+            ridiculus
+            mus. Nullam id dolor id nibh ultricies vehicula ut id elit. In sed ornare nulla.
+          </p>
+        </div>
+        <div class="section-block links">
+          <p>Lorem ipsum <a href>dolor</a> sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor,
+            quis
+            <a href>ullamcorper</a> ligula sodales at. Nulla tellus elit, varius non commodo eget, <a
+              href>mattis</a> vel eros. In sed ornare
+            nulla.
+          </p>
+        </div>
+        <div class="section-block links">
+          <p><a href>Active link — #209e91</a></p>
+
+          <p class="hovered"><a href>Hover link — #17857a</a></p>
+        </div>
+      </vue-panel>
+    </div>
   </div>
 </template>
 
