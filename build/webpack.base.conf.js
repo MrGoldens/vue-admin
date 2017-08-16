@@ -26,7 +26,8 @@ module.exports = {
       'jquery':'jquery',
       pages: path.resolve(__dirname, '../src/pages'),
       package: path.resolve(__dirname, '../package.json'),
-      mainStore: path.resolve(__dirname, '../src/store')
+      mainStore: path.resolve(__dirname, '../src/store'),
+      img: path.resolve(__dirname, '../src/assets/img')
     }
   },
   plugins: [
