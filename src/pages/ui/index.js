@@ -15,8 +15,15 @@ export default {
     path: '/ui/panels',
     component: lazyLoading('ui/panels'),
     sidebarMeta: {
-      title: 'panels',
-      icon: 'ion-android-laptop',
+      title: 'Panels',
+      order: 1
+    }
+  }, {
+    name: 'typography',
+    path: '/ui/typography',
+    component: lazyLoading('ui/typography'),
+    sidebarMeta: {
+      title: 'Typography',
       order: 1
     }
   }]
