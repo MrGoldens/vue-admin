@@ -16,7 +16,7 @@ export default {
     component: lazyLoading('ui/panels'),
     sidebarMeta: {
       title: 'Panels',
-      order: 1
+      order: 100
     }
   }, {
     name: 'typography',
@@ -24,7 +24,15 @@ export default {
     component: lazyLoading('ui/typography'),
     sidebarMeta: {
       title: 'Typography',
-      order: 1
+      order: 200
+    }
+  }, {
+    name: 'grid',
+    path: '/ui/grid',
+    component: lazyLoading('ui/grid'),
+    sidebarMeta: {
+      title: 'Grid',
+      order: 400
     }
   }]
 }
