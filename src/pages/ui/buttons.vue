@@ -21,6 +21,16 @@
           <div class="button-wrapper"><button type="button" class="btn btn-danger btn-raised">Danger</button></div>
         </vue-panel>
       </div>
+      <div class="col-md-3">
+        <vue-panel class="with-scroll button-panel df-size-button-panel"  vue-panel-title="Different sizes">
+          <div class="button-wrapper"><button type="button" class="btn btn-default  btn-xs">Default</button></div>
+          <div class="button-wrapper"><button type="button" class="btn btn-primary  btn-sm">Primary</button></div>
+          <div class="button-wrapper"><button type="button" class="btn btn-success btn-mm">Success</button></div>
+          <div class="button-wrapper"><button type="button" class="btn btn-info btn-md">Info</button></div>
+          <div class="button-wrapper"><button type="button" class="btn btn-warning btn-xm">Warning</button></div>
+          <div class="button-wrapper"><button type="button" class="btn btn-danger btn-lg">Danger</button></div>
+        </vue-panel>
+      </div>
     </div>
   </div>
 </template>
