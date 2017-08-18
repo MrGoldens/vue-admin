@@ -31,6 +31,16 @@
           <div class="button-wrapper"><button type="button" class="btn btn-danger btn-lg">Danger</button></div>
         </vue-panel>
       </div>
+      <div class="col-md-3">
+        <vue-panel class="with-scroll button-panel"  vue-panel-title="Disabled">
+          <div class="button-wrapper"><button type="button" class="btn btn-default" disabled="disabled">Default</button></div>
+          <div class="button-wrapper"><button type="button" class="btn btn-primary" disabled="disabled">Primary</button></div>
+          <div class="button-wrapper"><button type="button" class="btn btn-success" disabled="disabled">Success</button></div>
+          <div class="button-wrapper"><button type="button" class="btn btn-info" disabled="disabled">Info</button></div>
+          <div class="button-wrapper"><button type="button" class="btn btn-warning" disabled="disabled">Warning</button></div>
+          <div class="button-wrapper"><button type="button" class="btn btn-danger" disabled="disabled">Danger</button></div>
+        </vue-panel>
+      </div>
     </div>
   </div>
 </template>
