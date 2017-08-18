@@ -34,5 +34,13 @@ export default {
       title: 'Grid',
       order: 400
     }
+  }, {
+    name: 'buttons',
+    path: '/ui/buttons',
+    component: lazyLoading('ui/buttons'),
+    sidebarMeta: {
+      title: 'Buttons',
+      order: 500
+    }
   }]
 }
