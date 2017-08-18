@@ -14,7 +14,10 @@
 </template>
 
 <script>
-  export default {}
+  import VuePanel from '../../components/vuePanels/vuePanels.vue'
+  export default {
+    components: {VuePanel}
+  }
 </script>
 
 <style></style>
