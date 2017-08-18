@@ -43,7 +43,7 @@
       </div>
     </div>
     <div class="row">
-      <vue-panel class="col-md-6">
+      <div class="col-md-6">
         <vue-panel vue-panel-title="Icon Buttons" class="with-scroll">
           <div>
             <ul class="btn-list clearfix">
@@ -54,7 +54,9 @@
               <li><button type="button" class="btn btn-warning btn-icon"><i class="ion-android-warning"></i></button></li>
               <li><button type="button" class="btn btn-danger btn-icon"><i class="ion-nuclear"></i></button></li>
             </ul>
+
             <h5 class="panel-subtitle">Buttons with icons</h5>
+
             <ul class="btn-list clearfix">
               <li><button type="button" class="btn btn-primary btn-with-icon"><i class="ion-android-download"></i>Primary</button></li>
               <li><button type="button" class="btn btn-default btn-with-icon"><i class="ion-stats-bars"></i>Default</button></li>
@@ -63,18 +65,6 @@
               <li><button type="button" class="btn btn-warning btn-with-icon"><i class="ion-android-warning"></i>Warning</button></li>
               <li><button type="button" class="btn btn-danger btn-with-icon"><i class="ion-nuclear"></i>Danger</button></li>
             </ul>
-          </div>
-        </vue-panel>
-        <vue-panel vue-panel-title="Large Buttons" class="with-scroll large-buttons-panel">
-          <div>
-            <div class="row btns-row btns-same-width-lg">
-              <div class="col-sm-4 col-xs-6"><button type="button" class="btn btn-primary btn-lg">Primary</button></div>
-              <div class="col-sm-4 col-xs-6"><button type="button" class="btn btn-success btn-lg">Success</button></div>
-              <div class="col-sm-4 col-xs-6"><button type="button" class="btn btn-info btn-lg">Info</button></div>
-              <div class="col-sm-4 col-xs-6"><button type="button" class="btn btn-default btn-lg">Default</button></div>
-              <div class="col-sm-4 col-xs-6"><button type="button" class="btn btn-warning btn-lg">Warning</button></div>
-              <div class="col-sm-4 col-xs-6"><button type="button" class="btn btn-danger btn-lg">Danger</button></div>
-            </div>
           </div>
         </vue-panel>
       </div>
