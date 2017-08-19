@@ -11,7 +11,7 @@ export default {
     order: 1
   },
   subMenu: [{
-    name: 'panels',
+    name: 'Panels',
     path: '/ui/panels',
     component: lazyLoading('ui/panels'),
     sidebarMeta: {
@@ -19,7 +19,7 @@ export default {
       order: 100
     }
   }, {
-    name: 'typography',
+    name: 'Typography',
     path: '/ui/typography',
     component: lazyLoading('ui/typography'),
     sidebarMeta: {
@@ -27,7 +27,7 @@ export default {
       order: 200
     }
   }, {
-    name: 'grid',
+    name: 'Grid',
     path: '/ui/grid',
     component: lazyLoading('ui/grid'),
     sidebarMeta: {
@@ -35,11 +35,19 @@ export default {
       order: 400
     }
   }, {
-    name: 'buttons',
+    name: 'Buttons',
     path: '/ui/buttons',
     component: lazyLoading('ui/buttons'),
     sidebarMeta: {
       title: 'Buttons',
+      order: 500
+    }
+  }, {
+    name: 'Progress Bars',
+    path: '/ui/progressBars',
+    component: lazyLoading('ui/progressBars'),
+    sidebarMeta: {
+      title: 'Progress Bars',
       order: 500
     }
   }]
