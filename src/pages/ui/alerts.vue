@@ -57,6 +57,20 @@
           </div>
         </vue-panel>
       </div>
+      <div class="col-md-6">
+        <vue-panel vue-panel-title="Composite alerts" class="with-scroll">
+          <div >
+            <div class="alert bg-warning">
+              <h4>Warning!</h4>
+              <strong>Pay attention.</strong> Change a few things up and try submitting again.
+              <div class="control-alert">
+                <button type="button" class="btn btn-danger">Pay Attention</button>
+                <button type="button" class="btn btn-primary">Ignore</button>
+              </div>
+            </div>
+          </div>
+        </vue-panel>
+      </div>
     </div>
   </div>
 </template>
