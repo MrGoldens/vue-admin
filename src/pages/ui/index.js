@@ -48,7 +48,15 @@ export default {
     component: lazyLoading('ui/progressBars'),
     sidebarMeta: {
       title: 'Progress Bars',
-      order: 500
+      order: 600
+    }
+  }, {
+    name: 'Alerts',
+    path: '/ui/alerts',
+    component: lazyLoading('ui/alerts'),
+    sidebarMeta: {
+      title: 'Alerts',
+      order: 700
     }
   }]
 }
