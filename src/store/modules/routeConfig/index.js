@@ -3,7 +3,8 @@
  */
 import lazyLoading from './lazyLoading'
 import * as types from '../../mutation-types'
-import panels from '../../../pages/ui'
+import ui from '../../../pages/ui'
+import form from '../../../pages/form'
 const state = {
   items: [
     {
@@ -59,7 +60,8 @@ const state = {
         }
       ]
     },
-    panels
+    ui,
+    form
   ]
 }
 const mutations = {
