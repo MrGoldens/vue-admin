@@ -61,8 +61,8 @@
           <div class="input-group">
             <input type="text" class="form-control with-danger-addon" placeholder="Search for...">
             <span class="input-group-btn">
-      <button class="btn btn-danger" type="button">Go!</button>
-  </span>
+              <button class="btn btn-danger" type="button">Go!</button>
+            </span>
           </div>
         </vue-panel>
       </div>
