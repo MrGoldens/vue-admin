@@ -123,6 +123,8 @@
             </div>
           </div>
         </vue-panel>
+      </div>
+      <div class="col-md-6">
         <vue-panel vue-panel-title="Validation States" class="with-scroll">
           <div class="form-group has-success">
             <label class="control-label" for="inputSuccess1">Input with success</label>
@@ -160,7 +162,6 @@
               </label>
             </div>
           </div>
-
           <div class="form-group has-success has-feedback">
             <label class="control-label" for="inputSuccess2">Input with success</label>
             <input type="text" class="form-control" id="inputSuccess2" aria-describedby="inputSuccess2Status">
