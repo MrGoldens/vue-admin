@@ -3,7 +3,7 @@
  */
 import lazyLoading from './../../store/modules/routeConfig/lazyLoading'
 export default {
-  name: 'ion-grid',
+  name: 'Tables',
   expanded: false,
   sidebarMeta: {
     title: 'Tables',
@@ -13,7 +13,7 @@ export default {
   subMenu: [{
     name: 'Basic Tables',
     path: '/tables/tables',
-    component: lazyLoading('form/tables'),
+    component: lazyLoading('tables/tables'),
     sidebarMeta: {
       title: 'Basic Tables',
       order: 100
