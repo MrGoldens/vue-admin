@@ -18,8 +18,8 @@
             </tr>
             </thead>
             <tbody>
-            <tr v-for="item in metricsTableData">
-              <td></td>
+            <tr v-for="item in metricsTableData" class="no-top-border">
+              <td><img :src="item.image" alt="" width="20" height="20"/></td>
               <td class="nowrap">{{item.browser}}</td>
               <td class="align-right">{{item.visits}}</td>
               <td class="table-arr"><i :class="{'icon-up': item.isVisitsUp, 'icon-down': !item.isVisitsUp }"></i></td>
@@ -39,14 +39,18 @@
 
 <script>
   import VuePanel from '../../components/vuePanels/vuePanels.vue'
-
+  import chrome from '../../assets/img/app/browsers/chrome.svg'
+  import firefox from '../../assets/img/app/browsers/firefox.svg'
+  import ie from '../../assets/img/app/browsers/ie.svg'
+  import safari from '../../assets/img/app/browsers/safari.svg'
+  import opera from '../../assets/img/app/browsers/opera.svg'
   export default {
     components: { VuePanel },
     data () {
       return {
         metricsTableData: [
           {
-            image: 'app/browsers/chrome.svg',
+            image: chrome,
             browser: 'Google Chrome',
             visits: '10,392',
             isVisitsUp: true,
@@ -56,7 +60,7 @@
             isPercentUp: true
           },
           {
-            image: 'app/browsers/firefox.svg',
+            image: firefox,
             browser: 'Mozilla Firefox',
             visits: '7,873',
             isVisitsUp: true,
@@ -66,7 +70,7 @@
             isPercentUp: true
           },
           {
-            image: 'app/browsers/ie.svg',
+            image: ie,
             browser: 'Internet Explorer',
             visits: '5,890',
             isVisitsUp: false,
@@ -76,7 +80,7 @@
             isPercentUp: false
           },
           {
-            image: 'app/browsers/safari.svg',
+            image: safari,
             browser: 'Safari',
             visits: '4,001',
             isVisitsUp: false,
@@ -86,7 +90,7 @@
             isPercentUp: true
           },
           {
-            image: 'app/browsers/opera.svg',
+            image: opera,
             browser: 'Opera',
             visits: '1,833',
             isVisitsUp: true,
