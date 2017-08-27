@@ -18,8 +18,15 @@
             </tr>
             </thead>
             <tbody>
-            <tr v-for="x in metricsTableData">
-
+            <tr v-for="item in metricsTableData">
+              <td></td>
+              <td class="nowrap">{{item.browser}}</td>
+              <td class="align-right">{{item.visits}}</td>
+              <td class="table-arr"><i :class="{'icon-up': item.isVisitsUp, 'icon-down': !item.isVisitsUp }"></i></td>
+              <td class="align-right">{{item.purchases}}</td>
+              <td class="table-arr"><i :class="{'icon-up': item.isPurchasesUp, 'icon-down': !item.isPurchasesUp }"></i></td>
+              <td class="align-right">{{item.percent}}</td>
+              <td class="table-arr"><i :class="{'icon-up': item.isPercentUp, 'icon-down': !item.isPercentUp }"></i></td>
             </tr>
             </tbody>
           </table>
