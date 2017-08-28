@@ -47,7 +47,13 @@
             </tr>
             </thead>
             <tbody>
-
+            <tr v-for="item in metricsTableData">
+              <td><img :src="item.image" width="20" height="20"></td>
+              <td class="nowrap">{{item.browser}}</td>
+              <td class="align-right">{{item.visits}}</td>
+              <td class="align-right">{{item.purchases}}</td>
+              <td class="align-right">{{item.percent}}</td>
+            </tr>
             </tbody>
           </table>
         </div>
