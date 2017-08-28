@@ -35,7 +35,22 @@
     </div>
     <div class="col-lg-6 col-md-12">
       <vue-panel vue-panel-title="Bordered Table" class="with-scroll table-panel">
+        <div class="horizontal-scroll">
+          <table class="table table-bordered">
+            <thead>
+            <tr>
+              <th class="browser-icons"></th>
+              <th>Browser</th>
+              <th class="align-right">Visits</th>
+              <th class="align-right">Purchases</th>
+              <th class="align-right">%</th>
+            </tr>
+            </thead>
+            <tbody>
 
+            </tbody>
+          </table>
+        </div>
       </vue-panel>
     </div>
   </div>
