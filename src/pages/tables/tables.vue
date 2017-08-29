@@ -60,6 +60,13 @@
       </vue-panel>
     </div>
   </div>
+  <div class="row">
+    <div class="col-lg-6 col-md-12">
+      <vue-panel vue-panel-tilte="Condensed Table" class="with-scroll table-panel">
+
+      </vue-panel>
+    </div>
+  </div>
 </div>
 </template>
 
