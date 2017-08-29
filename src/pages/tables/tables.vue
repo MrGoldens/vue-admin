@@ -63,7 +63,30 @@
   <div class="row">
     <div class="col-lg-6 col-md-12">
       <vue-panel vue-panel-tilte="Condensed Table" class="with-scroll table-panel">
-
+        <div class="horizontal-scroll">
+          <table class="table table-condensed">
+            <thead>
+            <tr>
+              <th class="table-id">#</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Username</th>
+              <th>Email</th>
+              <th>Status</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr v-for="item in peopleTableData">
+              <td class="table-id">{{item.id}}</td>
+              <td>{{item.firstName}}</td>
+              <td>{{item.lastName}}</td>
+              <td>{{item.username}}</td>
+              <td><a class="email-link" :href="mailto:{{item.email}}">{{item.email}}</a></td>
+              <td><button class="status-button btn btn-xs btn-{{item.status}}">{{item.status}}</button></td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
       </vue-panel>
     </div>
   </div>
