@@ -81,8 +81,8 @@
               <td>{{item.firstName}}</td>
               <td>{{item.lastName}}</td>
               <td>{{item.username}}</td>
-              <td><a class="email-link" :href="mailto:{{item.email}}">{{item.email}}</a></td>
-              <td><button class="status-button btn btn-xs btn-{{item.status}}">{{item.status}}</button></td>
+              <td><a class="email-link" :href="'mailto:'+item.email">{{item.email}}</a></td>
+              <td><button class="status-button btn btn-xs" :class="'btn-'+item.status">{{item.status}}</button></td>
             </tr>
             </tbody>
           </table>
