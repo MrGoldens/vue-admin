@@ -91,7 +91,30 @@
     </div>
     <div class="col-lg-6 col-md-12">
       <vue-panel vue-panel-title="Striped Rows" class="with-scroll table-panel">
-
+        <div class="vertical-scroll">
+          <table class="table table-striped">
+            <thead>
+            <tr>
+              <th class="table-id">#</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Username</th>
+              <th>Email</th>
+              <th>Age</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr v-for="item in smartTableData">
+              <td class="table-id">{{item.id}}</td>
+              <td>{{item.firstName}}</td>
+              <td>{{item.lastName}}</td>
+              <td>{{item.username}}</td>
+              <td><a class="email-link" :href="'mailto:'+item.email">{{item.email}}</a></td>
+              <td>{{item.age}}</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
       </vue-panel>
     </div>
   </div>
