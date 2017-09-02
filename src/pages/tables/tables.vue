@@ -117,6 +117,13 @@
         </div>
       </vue-panel>
     </div>
+    <div class="row">
+      <div class="col-lg-6 col-md-12">
+        <vue-panel vue-panel-title="Contextual Table" class="with-scroll table-panel">
+
+        </vue-panel>
+      </div>
+    </div>
   </div>
 </div>
 </template>
