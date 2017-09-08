@@ -4,9 +4,7 @@
     <h3 class="panel-title">{{vuePanelTitle}}</h3>
   </div>
   <div class="panel-body">
-    <span>
       <slot></slot>
-    </span>
   </div>
 </div>
 </template>
