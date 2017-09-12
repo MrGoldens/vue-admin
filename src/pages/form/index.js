@@ -11,7 +11,7 @@ export default {
     order: 1
   },
   subMenu: [{
-    name: 'inputs',
+    name: 'Form Inputs',
     path: '/form/inputs',
     component: lazyLoading('form/inputs'),
     sidebarMeta: {
