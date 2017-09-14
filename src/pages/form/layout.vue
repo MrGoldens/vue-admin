@@ -1,5 +1,5 @@
 <template>
-
+  <div class="widgets"></div>
 </template>
 
 <script>
