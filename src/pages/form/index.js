@@ -18,5 +18,14 @@ export default {
       title: 'Form Inputs',
       order: 100
     }
-  }]
+  }, {
+    name: 'Form Layouts',
+    path: '/form/layout',
+    component: lazyLoading('form/layout'),
+    sidebarMeta: {
+      title: 'Form Layouts',
+      order: 100
+    }
+  }
+  ]
 }
