@@ -1,9 +1,33 @@
 <template>
-  <div class="widgets"></div>
+  <div class="widgets">
+    <div class="row">
+      <div class="col-md-12">
+        <vue-panel vue-panel-title="Inline Form" class="with-scroll">
+          <form class="row form-inline">
+            <div class="form-group col-sm-3 col-xs-6">
+              <input type="text" class="form-control" id="exampleInputName2" placeholder="Name">
+            </div>
+            <div class="form-group col-sm-3 col-xs-6">
+              <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email">
+            </div>
+            <div class="checkbox">
+              <label class="custom-checkbox">
+                <input type="checkbox">
+                <span>Remember me</span>
+              </label>
+            </div>
+            <button type="submit" class="btn btn-primary">Send invitation</button>
+          </form>
+        </vue-panel>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
-  export default {}
+  import VuePanel from '../../components/vuePanels/vuePanels.vue'
+
+  export default {components: {VuePanel}}
 
 </script>
 
