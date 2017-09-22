@@ -27,7 +27,9 @@
 <script>
   import VuePanel from '../../components/vuePanels/vuePanels.vue'
 
-  export default {components: {VuePanel}}
+  export default {
+    components: { VuePanel }
+  }
 
 </script>
 
