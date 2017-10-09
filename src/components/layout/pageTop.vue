@@ -8,11 +8,11 @@
       <input id="searchInput" type="text" placeholder="Search for...">
     </div>
 
-    <div class="user-profile clearfix">
+    <div class="user-profile clearfix" v-if="false">
       <div class="al-user-profile">
         <a class="profile-toggle-link">
         </a>
-        <ul  class="top-dropdown-menu profile-dropdown" v-if="false">
+        <ul  class="top-dropdown-menu profile-dropdown" >
           <li><i class="dropdown-arr"></i></li>
           <li><a href="#/profile"><i class="fa fa-user"></i>Profile</a></li>
           <li><a href><i class="fa fa-cog"></i>Settings</a></li>
