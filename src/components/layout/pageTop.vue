@@ -1,5 +1,5 @@
 <template>
-  <div class="page-top clearfix" v-scroll-position >
+  <div class="page-top clearfix" v-scroll-position>
     <a href="#/" class="al-logo clearfix"><span>Vue</span>Admin</a>
     <a class="collapse-menu-link ion-navicon" @click="toggleSidebar({opened: !sidebar.opened})"></a>
 
@@ -8,7 +8,7 @@
       <input id="searchInput" type="text" placeholder="Search for...">
     </div>
 
-    <div class="user-profile clearfix">
+    <div class="user-profile clearfix" v-if="false">
       <div class="al-user-profile">
         <a class="profile-toggle-link">
         </a>
