@@ -6,6 +6,7 @@ import * as types from '../../mutation-types'
 import ui from '../../../pages/ui'
 import form from '../../../pages/form'
 import tables from '../../../pages/tables'
+import http from '../../../pages/httpClient'
 const state = {
   items: [
     {
@@ -63,7 +64,8 @@ const state = {
     },
     ui,
     form,
-    tables
+    tables,
+    http
   ]
 }
 const mutations = {
